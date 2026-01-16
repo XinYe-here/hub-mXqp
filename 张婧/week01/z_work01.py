@@ -18,7 +18,7 @@ model.fit(input_feature, dataset[1].values)
 
 client = OpenAI(
     # 绑定百炼API_Key
-    api_key="sk-14fe590c89094a2c99983ebf8b1ef0e0",
+    api_key="sk-14fe5xxxxxxxbf8b1ef0e0",
 
     # 阿里云大模型地址，
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
