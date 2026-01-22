@@ -5,7 +5,7 @@ from openai import OpenAI
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.neighbors import KNeighborsClassifier
 
-data = pd.read_csv("dataset.csv", sep="\t", header=None)
+data = pd.read_csv("../dataset.csv", sep="\t", header=None)
 input_sen = data[0].apply(lambda x: " ".join(jieba.lcut(x)))
 vector = CountVectorizer()
 vector.fit(input_sen.values)
