@@ -4,8 +4,10 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.neighbors import KNeighborsClassifier
 from openai import OpenAI
 from fastapi import FastAPI
+import fastapi_cdn_host
 
 app = FastAPI()
+fastapi_cdn_host.patch_docs(app)
 
 data = pd.read_csv("dataset.csv", sep="\t", header=None, nrows=10000)
 # 分词处理
